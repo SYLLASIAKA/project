@@ -12,24 +12,40 @@
         Services
     </title>
     <style>
-        .text3 {
+        .container3 {
             text-align: center;
-        }
-
-        .text3 a {
-            font-size: 20px;
-            text-decoration: none;
-            color: white;
-            border-bottom: 2px solid rgb(48, 112, 222);
-        }
-
-        .text3 a span {
-            margin-left: 5px;
+            display: block;
+            position: absolute;
+            left: 30%;
+            top: 40%;
+            transform: translate(-30%, -40%);
+            width: 100%;
         }
 
         .h1t3 {
-            padding-top: 0;
-            margin-bottom: 25px;
+            color: white;
+            font-size: 55px;
+            margin-top: 80px;
+            margin-bottom: 40px;
+            line-height: 130%;
+            letter-spacing: 2px;
+            animation: text 3s 1;
+        }
+
+        .link3 {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            border-bottom: 2px solid rgb(60, 89, 187);
+            cursor: pointer;
+        }
+
+        @keyframes text {
+            0% {
+                margin-bottom: -60px;
+                color: rgb(34, 33, 33);
+
+            }
         }
     </style>
 </head>
@@ -38,7 +54,7 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="inf1.html">
+                <a href="adgroup.html">
                     <img src="images/adgroupe.jpeg" alt="adgroupe" class="im">
                     <span><strong>ADGroupe</strong> <br>African Development Groupe</span>
                 </a>
@@ -53,18 +69,25 @@
                 <a href="">Contact</a>
             </div>
         </nav>
-        <h1 class="h1t3">
-            Libérez le potentiel de votre <br> entreprise grâce à des solutions <br> numériques conçues pour votre <br>
-            réussite.
-
-        </h1>
-        <div class="text3">
-            <a href="">
+        <div class="container3">
+            <h1 class="h1t3">
+                Libérez le potentiel de votre <br> entreprise grâce à des solutions <br> numériques conçues pour votre
+                <br>
+                réussite.
+            </h1>
+            <a href="" class="link3">
                 Téléchargez notre offre de services
                 <span></span><ion-icon name="arrow-down-outline"></ion-icon></span>
             </a>
         </div>
     </header>
+    <div class="cursor"></div>
+    <script>
+        var cursor = document.querySelector(".cursor");
+        document.addEventListener("mousemove", function (e) {
+            cursor.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+        });
+    </script>
 
 </body>
 

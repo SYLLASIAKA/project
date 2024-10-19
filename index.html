@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" type="x-icon" href="images/adgroupe.jpeg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/style_home.css">
+
+    <title>
+        ADGroupe- African Development Groupe
+    </title>
+    <style>
+        section {
+            height: calc(100vh - 83.47px);
+            display: flex;
+            align-items: center;
+
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            /* margin-top: 80px; */
+            line-height: 55px;
+            letter-spacing: 2px;
+            padding: 0px 12%;
+            /* text-transform: */
+            font-size: 42px;
+            font-weight: 600;
+            /* animation: text 3s 1; */
+
+        }
+
+        @keyframes text {
+            0% {
+                color: rgb(34, 33, 33);
+
+            }
+
+            85% {
+                margin-top: -5px;
+                letter-spacing: 2px;
+                color: white;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <a href="/" class="logo">
+                <img src="images/logo.svg" alt="adgroupe" width="">
+            </a>
+            <div class="menu">
+                <a href="inf2.html">L'Enteprise</a>
+                <a href="inf3.html">Services</a>
+                <a href="inf4.html">Produits</a>
+                <a href="inf5.html">Realisations</a>
+            </div>
+
+            <a href="#" class="contact">
+                Contact
+            </a>
+        </nav>
+
+
+    </header>
+    <main>
+        <section>
+            <h1>
+                Inspirer et accompagner la transformation numérique des entreprises africaines pour un avenir durable.
+            </h1>
+        </section>
+    </main>
+    <div class="cursor"></div>
+    <script>
+        var cursor = document.querySelector(".cursor");
+        document.addEventListener("mousemove", function (e) {
+            cursor.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+        });
+    </script>
+</body>
+
+</html>

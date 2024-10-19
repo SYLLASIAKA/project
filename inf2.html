@@ -9,24 +9,41 @@
 
     <title>Company</title>
     <style>
-        .text2 {
+        .container2 {
             text-align: center;
-            margin-top: 20px;
-            margin-bottom: 20px;
+            display: block;
+            position: absolute;
+            left: 30%;
+            top: 40%;
+            transform: translate(-30%, -40%);
+            width: 100%;
         }
 
-        .text2 a {
-            font-size: 20px;
+        .h1t2 {
+            color: white;
+            font-size: 55px;
+            margin-top: 80px;
+            margin-bottom: 40px;
+            line-height: 130%;
+            letter-spacing: 2px;
+            animation: text 3s 1;
+            /* animation-fill-mode: forwards; */
+        }
+
+        .link2 {
             text-decoration: none;
             color: white;
-            border-bottom: 2px solid rgb(48, 112, 222);
-
-
+            font-size: 20px;
+            border-bottom: 2px solid rgb(60, 89, 187);
+            cursor: pointer;
         }
 
-        .h1t {
-            margin-top: 15px;
-            margin-bottom: 30px;
+        @keyframes text {
+            0% {
+                margin-bottom: -60px;
+                color: rgb(34, 33, 33);
+
+            }
         }
     </style>
 </head>
@@ -35,7 +52,7 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="inf1.html">
+                <a href="adgroup.html">
                     <img src="images/adgroupe.jpeg" alt="adgroupe" class="im">
                     <span><strong>ADGroupe</strong> <br>African Development Groupe</span>
                 </a>
@@ -50,12 +67,22 @@
                 <a href="">Contact</a>
             </div>
         </nav>
-        <h1 class="h1t">
-            Nous croyons en une Afrique où la <br> technologie révèle le plein potentiel <br> des individus et des
-            entreprises.
-        </h1>
-        <div class="text2"><a href=""> En savoir plus sur notre engagement.</a></div>
+        <div class="container2">
+            <h1 class="h1t2">
+                Nous croyons en une Afrique où la <br> technologie révèle le plein potentiel <br> des individus et des
+                entreprises.
+            </h1>
+            <a href="" class="link2"> En savoir plus sur notre engagement.</a>
+        </div>
     </header>
+    <div class="cursor"></div>
+    <script>
+        var cursor = document.querySelector(".cursor");
+        document.addEventListener("mousemove", function (e) {
+            cursor.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+        });
+    </script>
+
 
 </body>
 

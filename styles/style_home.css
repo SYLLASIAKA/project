@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    background-color: rgb(31, 31, 31, 1);
+}
+
+nav {
+    padding: 20px 52px 20px 52px;
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    align-items: center;
+    /* position: static; */
+
+}
+
+/* 
+.logo {
+    height: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+} */
+
+.im {
+    width: 125px;
+    border: 15px solid rgb(34, 33, 33);
+    /* border-radius: 60px; */
+    animation-duration: 3s;
+    animation-name: spin;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes spin {
+    0% {}
+
+    50% {}
+
+    100% {
+        transform: rotate(360deg);
+        border-radius: 50%;
+    }
+}
+
+/* .position {
+    text-align: left;
+    font-weight: bold;
+    font-size: large;
+    justify-content: space-evenly;
+} */
+
+strong {
+    font-size: x-large;
+}
+
+.ima {
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    /* padding: 10px 20px; */
+    font-size: 14px;
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    gap: 22px;
+}
+
+.menu a:before {
+    content: '';
+    height: 2.5px;
+    width: 0%;
+    background-color: white;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s linear;
+
+}
+
+.menu a:hover:before {
+    width: 100%;
+}
+
+
+.contact {
+    text-decoration: none;
+    color: white;
+    padding: 10px 8px 10px 8px;
+    font-size: 14px;
+    border: 1px solid white;
+    border-radius: 6px;
+    transition: background-color 0.4s ease 0s;
+
+}
+
+.contact:hover {
+    background-color: white;
+    color: black;
+    /* border: 1px solid transparent; */
+}
+
+.cursor {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: .15s;
+}

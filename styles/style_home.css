@@ -1,128 +1,150 @@
 * {
-    padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 
 }
 
 body {
-    background-color: rgb(31, 31, 31, 1);
+    background-color: #1f1f1f;
 }
 
-nav {
-    padding: 20px 52px 20px 52px;
+.nav_header_home {
     display: flex;
-    /* justify-content: space-around; */
     justify-content: space-between;
     align-items: center;
-    /* position: static; */
-
+    padding: 20px 60px;
 }
 
-/* 
-.logo {
-    height: 10px;
-    color: white;
+.nav_list {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-decoration: none;
-} */
-
-.im {
-    width: 125px;
-    border: 15px solid rgb(34, 33, 33);
-    /* border-radius: 60px; */
-    animation-duration: 3s;
-    animation-name: spin;
-    animation-direction: alternate;
-    animation-fill-mode: forwards;
+    column-gap: 30px;
 }
 
-@keyframes spin {
-    0% {}
+.nav_list a {
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
 
-    50% {}
+}
+
+.nav_header_contact {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.section_h1 {
+    margin-top: 45px;
+    padding: 0 100px;
+
+}
+
+.section_h1 h1 {
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    line-height: 65px;
+    position: relative;
+    animation: myfirst 1s ease-in;
+    animation-direction: normal;
+
+}
+
+@keyframes myfirst {
+    0% {
+
+        top: 150px;
+    }
 
     100% {
-        transform: rotate(360deg);
-        border-radius: 50%;
+        top: 0px;
     }
+
+    /* 50% {
+        left: 0px;
+        top: 50px;
+    } */
+
+    /* 100% {
+        left: 0px;
+        top: 10px;
+    } */
 }
 
-/* .position {
-    text-align: left;
-    font-weight: bold;
-    font-size: large;
-    justify-content: space-evenly;
+
+.section_container_first_info {
+    background-color: white;
+    padding-top: 50px;
+    margin: 73px 20px 0 20px;
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
+    border-radius: 13px;
+}
+
+.section_container_first_info h3 {
+    color: #383838;
+    text-align: center;
+    font-weight: normal;
+    padding: 30px 50px;
+    line-height: 27px;
+    font-size: 21px;
+}
+
+.section_container_first_info div {
+    /* border: 1px solid red; */
+    background-color: white;
+    padding: 50px 0 20px 0;
+    /* margin: 0 10px; */
+    /* margin-right: 10px; */
+    display: grid;
+    /* grid-template-columns: 200px 200px 200px 200px; */
+    grid-template-columns: repeat(auto-fit, 200px);
+    justify-content: space-around;
+    padding-left: 50px;
+    padding-right: 50px;
+    /* column-gap: 20px;  */
+}
+
+.section_container_first_info a {
+    text-decoration: none;
+    color: #383838;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+/* @media (max-height: 800px) {
+    .section_container_first_info a {
+        grid-template-rows: 200px 200px 200px 200px;
+    }
 } */
 
-strong {
-    font-size: x-large;
+.image_title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 15px;
 }
 
-.ima {
-    font-size: 10px;
-    font-weight: normal;
-}
-
-.menu a {
-    text-decoration: none;
-    color: white;
-    /* padding: 10px 20px; */
+.image_info_down {
+    /* margin-top: px; */
+    margin-bottom: 10px;
     font-size: 14px;
-    position: relative;
+    /* font-size: 10px; */
 }
 
-.menu {
-    display: flex;
-    gap: 22px;
-}
-
-.menu a:before {
-    content: '';
-    height: 2.5px;
-    width: 0%;
-    background-color: white;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    transition: width 0.3s linear;
-
-}
-
-.menu a:hover:before {
-    width: 100%;
-}
-
-
-.contact {
-    text-decoration: none;
-    color: white;
-    padding: 10px 8px 10px 8px;
-    font-size: 14px;
+.section_container_first_info a img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
     border: 1px solid white;
-    border-radius: 6px;
-    transition: background-color 0.4s ease 0s;
+    border-radius: 10px;
 
-}
-
-.contact:hover {
-    background-color: white;
-    color: black;
-    /* border: 1px solid transparent; */
-}
-
-.cursor {
-    position: fixed;
-    width: 8px;
-    height: 8px;
-    background-color: white;
-    border-radius: 50%;
-    left: 0;
-    top: 0;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transition: .15s;
 }

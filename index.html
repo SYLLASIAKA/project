@@ -2,87 +2,68 @@
 <html lang="en">
 
 <head>
-    <link rel="shortcut icon" type="x-icon" href="images/adgroupe.jpeg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles/style_home.css">
-
-    <title>
-        ADGroupe- African Development Groupe
-    </title>
-    <style>
-        section {
-            height: calc(100vh - 83.47px);
-            display: flex;
-            align-items: center;
-
-        }
-
-        h1 {
-            text-align: center;
-            color: white;
-            /* margin-top: 80px; */
-            line-height: 55px;
-            letter-spacing: 2px;
-            padding: 0px 12%;
-            /* text-transform: */
-            font-size: 42px;
-            font-weight: 600;
-            /* animation: text 3s 1; */
-
-        }
-
-        @keyframes text {
-            0% {
-                color: rgb(34, 33, 33);
-
-            }
-
-            85% {
-                margin-top: -5px;
-                letter-spacing: 2px;
-                color: white;
-            }
-
-        }
-    </style>
-
+    <link rel="stylesheet" href="styles/style_home.css">
+    <title>Adgroupe</title>
 </head>
 
 <body>
     <header>
-        <nav class="nav">
-            <a href="/" class="logo">
-                <img src="images/logo.svg" alt="adgroupe" width="">
-            </a>
-            <div class="menu">
-                <a href="inf2.html">L'Enteprise</a>
-                <a href="inf3.html">Services</a>
-                <a href="inf4.html">Produits</a>
-                <a href="inf5.html">Realisations</a>
+        <nav class="nav_header_home">
+            <a href="/"><img src="images/logo.svg" alt="adgroupe_logo"></a>
+            <div class="nav_list">
+                <a href="enteprise.html">
+                    L'Entreprise
+                </a>
+                <a href="service.html">
+                    Services
+                </a>
+                <a href="produit.html">
+                    Produits
+                </a>
+                <a href="realisation.html">
+                    Realisation
+                </a>
+
             </div>
 
-            <a href="#" class="contact">
-                Contact
-            </a>
+            <a href="#" class="nav_header_contact">Contact</a>
         </nav>
-
-
     </header>
     <main>
-        <section>
+        <section class="section_h1">
             <h1>
                 Inspirer et accompagner la transformation numérique des entreprises africaines pour un avenir durable.
             </h1>
         </section>
+        <section class="section_container_first_info">
+            <h3>
+                Nous accompagnons les organisations africaines dans leur transformation numérique en fournissant des
+                solutions numériques innovantes, des infrastructures solides et une expertise de classe mondiale
+                pour
+                assurer leur réussite dans l'ère digitale.
+            </h3>
+            <div>
+                <a href="#"><span class="image_title">Secteur public</span><img src="images/im11.png" alt=""
+                        style="background-size: cover;"><span class="image_info_down">Mieux servir vos
+                        citoyens</span></a>
+                <a href="#"> <span class="image_title">Entreprise</span><img src="images/im_2.jpg" alt=""><span
+                        class="image_info_down">Améliorer la
+                        productivité, l’efficacité et
+                        la prise de décision</span></a>
+                <a href="#"><span class="image_title">Commerce</span><img src="images/im_3.jpg" alt=""><span
+                        class="image_info_down">Atteindre
+                        de nouveaux
+                        clients et vendre
+                        davantage</span></a>
+                <a href="#"><span class="image_title">Communauté</span><img src="images/im_4.jpg" alt=""><span
+                        class="image_info_down">Se
+                        connecter, apprendre
+                        et prospérer</span></a>
+            </div>
+        </section>
     </main>
-    <div class="cursor"></div>
-    <script>
-        var cursor = document.querySelector(".cursor");
-        document.addEventListener("mousemove", function (e) {
-            cursor.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
-        });
-    </script>
 </body>
 
 </html>

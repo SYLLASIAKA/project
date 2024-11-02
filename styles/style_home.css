@@ -1,150 +1,121 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #1f1f1f;
+  background-color: #1f1f1f;
 }
 
 .nav_header_home {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
 }
 
 .nav_list {
-    display: flex;
-    column-gap: 30px;
+  display: flex;
+  column-gap: 30px;
 }
 
 .nav_list a {
-    color: white;
-    font-size: 13px;
-    text-decoration: none;
-
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
 }
 
 .nav_header_contact {
-    color: white;
-    text-decoration: none;
-    font-size: 15px;
-    border: 1px solid white;
-    padding: 10px;
-    border-radius: 7px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 7px;
 }
 
 .section_h1 {
-    margin-top: 45px;
-    padding: 0 100px;
-
+  height: calc(100vh - 84.2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 120px;
 }
 
 .section_h1 h1 {
-    color: white;
-    text-align: center;
-    font-size: 48px;
-    line-height: 65px;
-    position: relative;
-    animation: myfirst 1s ease-in;
-    animation-direction: normal;
-
+  color: white;
+  text-align: center;
+  font-size: 48px;
+  line-height: 65px;
+  position: relative;
+  animation: myfirst 1s ease-in;
+  animation-direction: normal;
 }
 
 @keyframes myfirst {
-    0% {
+  0% {
+    top: 150px;
+  }
 
-        top: 150px;
-    }
-
-    100% {
-        top: 0px;
-    }
-
-    /* 50% {
-        left: 0px;
-        top: 50px;
-    } */
-
-    /* 100% {
-        left: 0px;
-        top: 10px;
-    } */
+  100% {
+    top: 0px;
+  }
 }
 
-
 .section_container_first_info {
-    background-color: white;
-    padding-top: 50px;
-    margin: 73px 20px 0 20px;
-    /* margin-left: 20px; */
-    /* margin-right: 20px; */
-    border-radius: 13px;
+  background-color: white;
+  padding-top: 50px;
+
+  border-radius: 13px;
 }
 
 .section_container_first_info h3 {
-    color: #383838;
-    text-align: center;
-    font-weight: normal;
-    padding: 30px 50px;
-    line-height: 27px;
-    font-size: 21px;
+  color: #383838;
+  text-align: center;
+  font-weight: normal;
+  padding: 30px 50px;
+  line-height: 27px;
+  font-size: 21px;
 }
 
 .section_container_first_info div {
-    /* border: 1px solid red; */
-    background-color: white;
-    padding: 50px 0 20px 0;
-    /* margin: 0 10px; */
-    /* margin-right: 10px; */
-    display: grid;
-    /* grid-template-columns: 200px 200px 200px 200px; */
-    grid-template-columns: repeat(auto-fit, 200px);
-    justify-content: space-around;
-    padding-left: 50px;
-    padding-right: 50px;
-    /* column-gap: 20px;  */
+  background-color: white;
+  padding: 50px 0 20px 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  justify-content: space-around;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .section_container_first_info a {
-    text-decoration: none;
-    color: #383838;
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+  text-decoration: none;
+  color: #383838;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
-
-/* @media (max-height: 800px) {
-    .section_container_first_info a {
-        grid-template-rows: 200px 200px 200px 200px;
-    }
-} */
-
 .image_title {
-    font-weight: bold;
-    font-size: 20px;
-    margin-top: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 15px;
 }
 
 .image_info_down {
-    /* margin-top: px; */
-    margin-bottom: 10px;
-    font-size: 14px;
-    /* font-size: 10px; */
+  margin-bottom: 10px;
+  font-size: 14px;
 }
 
 .section_container_first_info a img {
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
-    object-position: center;
-    border: 1px solid white;
-    border-radius: 10px;
-
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid white;
+  border-radius: 10px;
 }
